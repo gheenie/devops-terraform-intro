@@ -9,7 +9,7 @@ You can test Terraform is installed by typing `which terraform`.
 You may find it useful to install the `HashiCorp Terraform` extension on VSCode to help with syntax.
 
 ## Crash course
-You will need to set up a sandbox and CLI credentials in the shell in which you are working. If the AWS CLI works in the shell, so should Terraform.
+You will need to set up a sandbox and CLI credentials in the shell in which you are working. If the AWS CLI can access the sandbox from your shell session, so should Terraform.
 
 Terraform resources are defined in files whose names usually end in `.tf`. 
 
@@ -29,6 +29,8 @@ When you are satisfied, deploy the items:
 ```bash
 terraform apply
 ```
+
+You will see that a file called something like `terraform.tfstate` has been created in the folder. This is the "state" file which contains a list of the various items created and their relationships. It is really important that you do not edit or delete this file or Terraform will lose track of what it has done.
 
 You can change the definition of the items and then run `plan` and `apply` again to modify the deployment.
 
