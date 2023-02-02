@@ -13,11 +13,10 @@ You will need to set up a sandbox and CLI credentials in the shell in which you 
 
 Terraform resources are defined in files whose names usually end in `.tf`. 
 
-Initialise Terraform by typing:
+To Initialise Terraform `cd` into the same directory as the `.tf` files, then type:
 ```bash
 terraform init
 ```
-You should `cd` into the same directory as the `.tf` files before you do this. 
 
 You can test whether your Terraform resources define valid infrastructure by typing:
 ```bash
